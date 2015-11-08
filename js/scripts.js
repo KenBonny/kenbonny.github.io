@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     /* smooth scrolling for scroll to top */
     $(".scroll-top").click(function() {
@@ -25,4 +24,8 @@ $(document).ready(function () {
             return this; // for chaining...
         }
     })(jQuery);
+
+    $.getJSON("../json_data/skills.json", function(skillData) {
+        WordCloud(document.getElementById("skillCanvas"), skillData);
+    });
 });
