@@ -44,19 +44,24 @@ $(document).ready(function () {
             return b[1] - a[1];
         });
 
-        $("#skillTable").append("<tr>");
+        var row = "<tr>";
+        var addedRow = false;
         for (var i = 0; i < skillData.list.length; i++) {
+            addedRow = false;
             var skill = skillData.list[i][0];
-            if (i % 6 === 0 & i !== 0) {
-                $("#skillTable").append("</tr>");
-                $("#skillTable").append("<tr>");
-                
-            }
-            $("#skillTable").append("<td>" + skill + "</td>");
-        }
-        $("#skillTable").append("</td>");
-    });
+            row = row + "<td>" + skill + "</td>";
 
-    //$("#skillTabs a:last").tab("show");
-    //$("#skillTabs a:first").tab("show");
+            var startNewRow = (i + 1) % 6;
+            if (i !== 0 && startNewRow === 0) {
+                row = row + "</tr>";
+                $("#skillTable").append(row);
+                row = "<tr>";
+                addedRow = true;
+            }
+        }
+        if (!addedRow) {
+            row = row + "</tr>";
+            $("#skillTable").append(row);
+        }
+    });
 });

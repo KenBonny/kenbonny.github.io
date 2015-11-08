@@ -37,7 +37,7 @@
             <p class="lead">.NET developer (MCP), security enthousiast, Krav Maga practitioner, gamer and all round geek.</p>
         </div>
     </header>
-    <section id="about" class="blurb">
+    <section id="about"class="featurette">
         <div class="container">
             <section class="row">
                 <div class="col-sm-7">
@@ -66,7 +66,7 @@
             </section>
         </div>
     </section>
-    <section id="projects" class="featurette">
+    <section id="projects" class="blurb" >
         <div class="container">
             <section class="row">
                 <div class="col-md-7">
@@ -75,8 +75,12 @@
                 </div>
             </section>
             <section class="row">
-                <div class="col-md-12">
-                    Put sunburst here.
+                <div class="col-md-12 hidden-xs hidden-sm" id="sunburst">
+
+                </div>
+                <div>For a more detailed overview of the projects, check out the <a href="https://be.linkedin.com/in/kenbonny#projects" target="_blank">profile</a> section of Ken's <a href="#contact" onclick="$('#contact').goTo()">LinkedIn</a> account.</div>
+                <div class="col-md-12 visible-xs visible-sm">
+                    To view this, please use a bigger screen or check out my <a href="#contact" onclick="$('#contact').goTo()">LinkedIn</a> account.
                 </div>
             </section>
         </div>
@@ -93,11 +97,13 @@
                 <div class="col-md-12">
                     <canvas id="skillCanvas"></canvas>
                     <div>
-                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#skillList" aria-expanded="False" aria-controls="skillList">Show Skill List</button>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#skillList" aria-expanded="False" aria-controls="skillList">Show full skill list</button>
                         <div class="collapse" id="skillList">
-                            <table class="table">
-                                <tbody id="skillTable"></tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <tbody id="skillTable"></tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -147,8 +153,9 @@
     </footer>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="js/wordcloud2.js"></script>
-    <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>-->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.js"></script>
+    <script type="text/javascript" src="js/wordcloud2.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/sunburst.js"></script>
 </body>
 </html>

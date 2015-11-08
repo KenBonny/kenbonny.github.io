@@ -1,0 +1,111 @@
+﻿{
+  "name": "Work Experience",
+  "color":  "white",
+  "children": [
+    {
+      "name": "Logica/CGI",
+      "color": "#FFFF00",
+      "children": [
+        {
+          "name": "e-Spot: Webservices",
+          "color": "#FFFACD",
+          "size": 5
+        },
+        {
+          "name": "Electrabel",
+          "color": "#FFEFD5",
+          "children": [
+            {
+              "name": "TOP",
+              "color": "#FFE4B5",
+              "size": 4
+            },
+            {
+              "name": "HARPON",
+              "color": "#F0E68C",
+              "size": 2
+            },
+            {
+              "name": "Service Request Tool",
+              "color": "#BDB76B",
+              "size": 1
+            },
+            {
+              "name": "Commodity Bidding",
+              "color": "#FFFF99",
+              "size": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RealDolmen",
+      "color": "#FF0000",
+      "children": [
+        {
+          "name": "Rutgers: WCF Service",
+          "color": "#DC143C",
+          "size": 1
+        },
+        {
+          "name": "RIZIV",
+          "color": "#CD5C5C",
+          "children": [
+            {
+              "name": "VTIM",
+              "color": "#B22222",
+              "size": 4
+            },
+            {
+              "name": "IDES",
+              "color": "#800000",
+              "size": 5
+            }
+          ]
+        },
+        {
+          "name": "KPMG: KIDS Automation",
+          "color": "#FF4500",
+          "size": 2
+        },
+        {
+          "name": "RealDolmen: Community Site",
+          "color": "#FF0088",
+          "size": 4
+        },
+        {
+          "name": "Electrabel",
+          "color": "#FF7F50",
+          "children": [
+            {
+              "name": "Gesto",
+              "color": "#FFA500",
+              "size": 2
+            },
+            {
+              "name": "Geway",
+              "color": "#FF8C00",
+              "size": 2
+            }
+          ]
+        },
+        {
+          "name": "Retail Estates: Application",
+          "color": "#8B0000",
+          "size": 1
+        },
+        {
+          "name": "BVL: Time Registration Site Migration",
+          "color": "#DB7093",
+          "size": 5
+        },
+        {
+          "name": "Selor: RSS HR-XML",
+          "color": "#FFA07A",
+          "size": 1
+        }
+      ]
+    }
+  ]
+}
