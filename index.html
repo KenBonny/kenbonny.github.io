@@ -91,7 +91,15 @@
             </section>
             <section class="row">
                 <div class="col-md-12">
-                    <canvas id="skillCanvas" width="700" height="500"></canvas>
+                    <canvas id="skillCanvas"></canvas>
+                    <div>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#skillList" aria-expanded="False" aria-controls="skillList">Show Skill List</button>
+                        <div class="collapse" id="skillList">
+                            <table class="table">
+                                <tbody id="skillTable"></tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -138,7 +146,7 @@
         </div>
     </footer>
     <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="js/wordcloud2.js"></script>
     <!--<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>-->
     <script type="text/javascript" src="js/scripts.js"></script>
